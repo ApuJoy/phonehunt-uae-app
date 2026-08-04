@@ -6,7 +6,7 @@ type ButtonProps = {
 
 export default function Button({ children }: ButtonProps) {
   return (
-    <button className="rounded-lg bg-blue-600 px-6 py-3 font-medium text-white transition-colors duration-200 hover:bg-blue-700">
+    <button className="rounded-xl bg-blue-600 px-7 py-4 font-semibold text-white shadow-sm transition-all duration-200 hover:bg-blue-700 hover:shadow-md">
       {children}
     </button>
   );
