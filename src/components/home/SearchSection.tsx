@@ -27,7 +27,17 @@ export default function SearchSection({
               className="flex-1 rounded-xl border border-slate-200 px-5 py-4 text-slate-700 shadow-sm outline-none transition focus:border-blue-600 focus:ring-2 focus:ring-blue-100"
             />
 
-            <Button>Search</Button>
+            <Button>
+              Search Phones
+            </Button>
+            {search && (
+              <button
+                onClick={() => setSearch("")}
+                className="rounded-xl border border-slate-200 px-5 py-4 text-sm font-medium text-slate-600 transition hover:bg-slate-100"
+              >
+                Clear
+              </button>
+            )}
           </div>
         </div>
       </div>
